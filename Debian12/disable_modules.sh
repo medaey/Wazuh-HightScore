@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Installation des pakcage necesaire
+sudo apt-get install kmod
+
 # Variables de contrôle
 # Utilisez "true" pour activer et "false" pour désactiver les modules
 ENABLE_CRAMFS=false
