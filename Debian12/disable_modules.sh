@@ -9,6 +9,8 @@ ENABLE_HFSPLUS=false
 ENABLE_UDF=false
 ENABLE_JFFS2=false
 ENABLE_FREEVXFS=false
+ENABLE_RDS=false
+ENABLE_TIPC=false
 
 # Dossiers de configuration
 CONFIG_DIR="/etc/modprobe.d"
@@ -65,5 +67,9 @@ manage_module "hfsplus" $ENABLE_HFSPLUS
 manage_module "udf" $ENABLE_UDF
 manage_module "jffs2" $ENABLE_JFFS2
 manage_module "freevxfs" $ENABLE_FREEVXFS
+manage_module "rds" $ENABLE_RDS
+manage_module "tipc" $ENABLE_TIPC
+manage_module "sctp" $ENABLE_SCTP
+manage_module "dccp" $ENABLE_DCCP
 
 echo "Configuration terminée."
